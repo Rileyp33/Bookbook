@@ -34,20 +34,12 @@ target 'Bookbook' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'BookbookTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  #####
+
+  pod 'react-native-camera', path: '../node_modules/react-native-camera', subspecs: [
+    'TextDetector'
+  ]
+  pod 'Firebase/Core'
 
   use_native_modules!
-end
-
-target 'Bookbook-tvOS' do
-  # Pods for Bookbook-tvOS
-
-  target 'Bookbook-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

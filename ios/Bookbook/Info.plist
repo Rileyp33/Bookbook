@@ -39,6 +39,12 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>Bookbook uses the camera to populate your libary.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Bookbook uses your photos to populate your library.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone usage is an option of the included RNCamera library, but Bookbook does not use the microphone.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
