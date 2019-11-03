@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "740376095632",
+    "firebase_url": "https://bookbook-3fd01.firebaseio.com",
+    "project_id": "bookbook-3fd01",
+    "storage_bucket": "bookbook-3fd01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740376095632:android:b5af19854fd96e71de6115",
+        "android_client_info": {
+          "package_name": "com.bookbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740376095632-4262e19n791p2l9oet1aj98bp6dnud79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7z_m8yw4Qq4btveRCbIOyl9fEK5BFVI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740376095632-4262e19n791p2l9oet1aj98bp6dnud79.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "740376095632-34dnnhgl6ed5o8q99f7r51mbkoe4flch.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Bookbook"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
