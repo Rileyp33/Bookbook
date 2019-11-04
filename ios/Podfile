@@ -42,4 +42,5 @@ target 'Bookbook' do
   pod 'Firebase/Core'
 
   use_native_modules!
+
 end
