@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, TouchableOpacity, StyleSheet, Text } from 'react-native'
-import { RNCamera } from 'react-native-camera';
+import { RNCamera } from 'react-native-camera'
+import RNTextDetector from "react-native-text-detector"
+import { BookSearch } from 'react-native-google-books'
 
 
 export default class TestScreen extends React.Component {
@@ -14,16 +16,23 @@ export default class TestScreen extends React.Component {
 
   takePicture = async () => {
     if (this.camera) {
-      const options = { quality: 0.5, base64: true };
-      const data = await this.camera.takePictureAsync(options);
-      this.setState({ image: data })
+      const options = { 
+        quality: 0.5, 
+        base64: true 
+      }
+      const { uri } = await this.camera.takePictureAsync(options)
+      const textResponse = await RNTextDetector.detectFromUri(uri);
+      console.log("TEXT RESPONSE: ", textResponse)
     }
   }
 
-  textRecognized = object => {
-    const { textBlocks } = object
-    this.setState({ textBlocks })
-    console.log(textBlocks)
+  async getGameofThronesBooks() {
+    let books = await BookSearch.searchbook("game of thrones", "AIzaSyB_zA5Vzx8ov4fXezEzbDK_LcSTPj-Rbr0");
+    console.log(books)
+  }
+
+  componentDidMount() {
+    this.getGameofThronesBooks()
   }
 
   render() {
@@ -41,7 +50,6 @@ export default class TestScreen extends React.Component {
             buttonPositive: 'Ok',
             buttonNegative: 'Cancel',
           }}
-          onTextRecognized={this.textRecognized}
         />
         <View style={{ flex: 0, flexDirection: 'row', justifyContent: 'center' }}>
           <TouchableOpacity onPress={() => this.takePicture()} style={style.capture}>

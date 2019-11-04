@@ -340,6 +340,12 @@ PODS:
     - ReactCommon/jscallinvoker (= 0.61.3)
   - RNGestureHandler (1.3.0):
     - React
+  - RNTextDetector (0.0.6):
+    - React
+    - TesseractOCRiOS (~> 4.0.0)
+  - RNVectorIcons (6.6.0):
+    - React
+  - TesseractOCRiOS (4.0.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -373,6 +379,8 @@ DEPENDENCIES:
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNTextDetector (from `../node_modules/react-native-text-detector/ios`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -396,6 +404,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - nanopb
     - Protobuf
+    - TesseractOCRiOS
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -450,6 +459,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNTextDetector:
+    :path: "../node_modules/react-native-text-detector/ios"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -499,6 +512,9 @@ SPEC CHECKSUMS:
   React-RCTVibration: 262588c97551b0b1c675468cda857466ba5af18f
   ReactCommon: c2c63d9290b422ca6ad5b3663073a015dd892ae9
   RNGestureHandler: 5329a942fce3d41c68b84c2c2276ce06a696d8b0
+  RNTextDetector: 3983fcecbd4a95ea4664d3269a62c1b14c3a712b
+  RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
   Yoga: 02036f6383c0008edb7ef0773a0e6beb6ce82bd1
 
 PODFILE CHECKSUM: c99492b2526b7c3293931261d0a0dc57fbc36bbb
